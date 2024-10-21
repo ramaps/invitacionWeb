@@ -1,0 +1,231 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+:root{
+    --dorado:#f0c505f9;
+    --doradoOpaco:#e3c034;
+    --blanco: rgba(255, 255, 255, 0.1);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+}
+
+.old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+}
+
+.old-standard-tt-bold {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+}
+
+.old-standard-tt-regular-italic {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido dentro de wrapper */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background-color: rgba(255, 192, 203, 0.526);
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0, 5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+body > *{
+    position: relative;
+    z-index: 2;
+}
+
+.fondo-tarjeta {
+background-image: url('../img/Invitacion\ de\ Cumpleaños\ de\ 15\ Floral\ Elegante.png'); /* Ruta de tu imagen */
+background-size: cover; /* Para que cubra todo el fondo */
+background-position: center; /* Centrar la imagen */
+background-repeat: no-repeat; /* Evitar que se repita la imagen */
+padding: 20px; /* Un poco de espacio interior si es necesario */
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+font-family: "Nunito", sans-serif;
+box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
+}
+
+.encabezado {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+    /* Para que el pseudo-elemento no se salga del contenedor */
+    height: auto; /* Altura automática según el contenido */
+    z-index: 2; /* Asegura que el contenido está por encima del fondo */
+}
+
+.encabezado::before {
+    content: ""; /* Pseudo-elemento para la imagen de fondo */
+    position: absolute; /* Posiciona el pseudo-elemento relativo al contenedor */
+    top: 50%; /* Centra verticalmente el pseudo-elemento */
+    left: 50%; /* Centra horizontalmente el pseudo-elemento */
+    transform: translate(-50%, -50%) rotate(-5deg); /* Traslada el pseudo-elemento para centrarlo y rota solo la imagen */
+    width: 500px; /* Ajusta el ancho del fondo */
+    height: 380px; /* Ajusta la altura del fondo */
+    background: url('../img/jona\ y\ vani.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* O 'contain' o un tamaño específico, según tus necesidades */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del pseudo-elemento */
+    opacity: 0.3; /* Ajusta la transparencia del fondo (0.0 es completamente transparente, 1.0 es completamente opaco) */
+    z-index: 1; /* Coloca el fondo detrás del texto */
+    box-shadow: 0 6px 10px #03030374;
+}
+
+.encabezado h1{
+    font-size: 9em;
+    color: var(--doradoOpaco);
+    text-shadow: 0px 25px 30px hsla(0, 0%, 1%, 0.751);
+    position: relative;
+    margin-bottom: 80px;
+    margin-left: 400px;
+    z-index: 2;
+}
+
+.encabezado p{
+    font-size: 4em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--doradoOpaco);
+    text-shadow: 0px 25px 30px hsla(0, 0%, 1%, 0.751);
+    position: relative;
+    z-index: 2;
+}
+
+.reproductor-musica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    width: 360px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #3e3e3e1d;
+    color: var(--dorado);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.reproductor-musica h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.reproductor-musica p {
+    font-size: 0.8rem;
+    font-weight: 360;
+    opacity: 0.6;
+}
+
+#progreso {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: var(--dorado);
+    border-radius: 4px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+}
+
+#progreso::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: #ffe600;
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    outline: 4px solid var(--blanco);
+    box-shadow: 0 6px 10px #03030374;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+}
+
+.controles button {
+    width: 40px;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    background: #c8b50a37;
+    color: var(--blanco);
+    border-radius: 50%;
+    border: 1px solid var(--blanco);
+    outline: 0;
+    font-size: 1.3rem;
+    box-shadow: 0 6px 10px rgba(48, 48, 48, 0.3);
+    cursor: pointer;
+    transition: all 0.1s linear;
+    color: var(--dorado);
+}
+
+.controles .control:hover {
+    transform: scale(1.1);
+}
+
+.controles .iconoControl{
+    transform: scale(1.3);
+}
+
+.controles .iconoControl:hover {
+    transform: scale(1.4);
+}
+
+.timer h2 {
+    color: var(--doradoOpaco);
+    text-shadow: 0px 25px 30px hsla(0, 0%, 1%, 0.751);
+}
+
+.map-container {
+    width: 100%;      /* Ancho completo del contenedor */
+    height: 100px;     /* Altura del mapa, ajustable según tus necesidades */
+    max-width: 400px;  /* Máximo ancho */
+    margin-top: 18px;
+    margin-bottom: 50px;   
+    overflow: hidden;  
+    border: 1px solid var(--doradoOpaco);
+    border-radius: 20px; 
+    box-shadow: 0 6px 10px rgba(48, 48, 48, 0.3);
+}
+
+.map-container iframe {
+    width: 100%;        /* Hacer que el iframe ocupe el 100% del contenedor */
+    height: 100%;       /* Hacer que el iframe ocupe el 100% de la altura del contenedor */
+    border: 0;          /* Sin borde en el iframe */
+}
+
