@@ -79,11 +79,12 @@ body > *{
     box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
 }
 
+/*inicio del encabezado*/
+
 .encabezado {
     position: relative; /* Necesario para posicionar el pseudo-elemento */
     text-align: center; /* Centra el texto */
     padding: 20px; /* Espaciado interno */
-    /* Para que el pseudo-elemento no se salga del contenedor */
     height: auto; /* Altura automática según el contenido */
     z-index: 2; /* Asegura que el contenido está por encima del fondo */
 }
@@ -94,13 +95,13 @@ body > *{
     top: 50%; /* Centra verticalmente el pseudo-elemento */
     left: 50%; /* Centra horizontalmente el pseudo-elemento */
     transform: translate(-50%, -50%) rotate(-5deg); /* Traslada el pseudo-elemento para centrarlo y rota solo la imagen */
-    width: 500px; /* Ajusta el ancho del fondo */
+    width: 600px; /* Ajusta el ancho del fondo */
     height: 380px; /* Ajusta la altura del fondo */
     background: url('../img/rm321-mynt-16.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* O 'contain' o un tamaño específico, según tus necesidades */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen dentro del pseudo-elemento */
-    opacity: 0.3; /* Ajusta la transparencia del fondo (0.0 es completamente transparente, 1.0 es completamente opaco) */
+    opacity: 0.8; /* Ajusta la transparencia del fondo (0.0 es completamente transparente, 1.0 es completamente opaco) */
     z-index: 1; /* Coloca el fondo detrás del texto */
     box-shadow: 0 6px 10px #03030374;
 }
@@ -111,7 +112,7 @@ body > *{
     text-shadow: 0px 25px 30px hsla(0, 0%, 98%, 0.751);
     position: relative;
     margin-bottom: 80px;
-    margin-left: 350px;
+    margin-right: 350px;
     z-index: 2;
 }
 
@@ -120,10 +121,14 @@ body > *{
     margin-top: 20px;
     margin-bottom: 30px;
     color: var(--doradoOpaco);
-    text-shadow: 0px 25px 30px hsla(0, 0%, 98%, 0.751);
+    text-shadow: 0px 25px 30px hsla(0, 0%, 98%, 0.91);
     position: relative;
     z-index: 2;
 }
+/*fin del encabezado*/
+
+
+/*inicio del reproductor*/
 
 .reproductor-musica {
     display: flex;
@@ -206,7 +211,9 @@ body > *{
 .controles .iconoControl:hover {
     transform: scale(1.4);
 }
+/*fin del reproductor*/
 
+/*inicio del cronometro*/
 .cronometro {
     display: flex;
     justify-content: center;
@@ -257,11 +264,13 @@ body > *{
 .contenedorDeElemntos h2{
     margin-bottom: 20px;
 }
+/*fin del cronometro*/
 
+/*inicio del mapa*/
 .map-container {
     width: 100%;      /* Ancho completo del contenedor */
-    height: 130px;     /* Altura del mapa, ajustable según tus necesidades */
-    max-width: 400px;  /* Máximo ancho */
+    height: 140px;     /* Altura del mapa, ajustable según tus necesidades */
+    max-width: 500px;  /* Máximo ancho */
     margin-top: 18px;
     margin-bottom: 50px;   
     overflow: hidden;  
@@ -275,11 +284,35 @@ body > *{
     height: 100%;
     border: 0;
 }
+/*fin  del mapa*/
+
+/*inicio del carrusel*/
+
+.carousel h2{
+    margin-bottom: 50px;
+    color: var(--doradoOpaco);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-width: 500px; /* Ancho máximo del carrusel */
+    max-height: 300px; /* Alto máximo del carrusel */
+    margin-bottom: 60px; /* Centrar el carrusel horizontalmente */
+}
+
+.carousel-item img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del carrusel */
+    height: 300px; /* Fija la altura de las imágenes */
+    object-fit: cover; /* Las imágenes se recortan y ajustan para cubrir el espacio */
+    object-position: center; /* Centra las imágenes en el área visible */
+}
+
+/*fin del carrusel imaganes*/
 
 
-
-
-
+/*inicio de Redes Sociales*/
 
 .redesSociales{
     display: flex;
@@ -301,6 +334,7 @@ body > *{
 .redesSociales i {
     display: inline-block; /* Necesario para que el transform funcione */
 }
+/*fin de Redes Sociales*/
 
 /*ajustamos la pantalla a una tablet*/
 
