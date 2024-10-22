@@ -66,17 +66,17 @@ body > *{
 }
 
 .fondo-tarjeta {
-background-image: url('../img/Invitacion\ de\ Cumpleaños\ de\ 15\ Floral\ Elegante.png'); /* Ruta de tu imagen */
-background-size: cover; /* Para que cubra todo el fondo */
-background-position: center; /* Centrar la imagen */
-background-repeat: no-repeat; /* Evitar que se repita la imagen */
-padding: 20px; /* Un poco de espacio interior si es necesario */
-display: flex;
-flex-direction: column;
-align-items: center;
-min-height: 100vh;
-font-family: "Nunito", sans-serif;
-box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
+    background-image: url('../img/Invitacion\ de\ Cumpleaños\ de\ 15\ Floral\ Elegante.png'); /* Ruta de tu imagen */
+    background-size: cover; /* Para que cubra todo el fondo */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que se repita la imagen */
+    padding: 20px; /* Un poco de espacio interior si es necesario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+    box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
 }
 
 .encabezado {
@@ -111,7 +111,7 @@ box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
     text-shadow: 0px 25px 30px hsla(0, 0%, 1%, 0.751);
     position: relative;
     margin-bottom: 80px;
-    margin-left: 400px;
+    margin-left: 350px;
     z-index: 2;
 }
 
@@ -136,8 +136,8 @@ box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
     border-radius: 20px;
     background-color: #3e3e3e1d;
     color: var(--dorado);
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 70px;
+    margin-bottom: 90px;
 }
 
 .reproductor-musica h1 {
@@ -207,39 +207,11 @@ box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
     transform: scale(1.4);
 }
 
-.timer h2 {
-    margin-bottom: 30px;
-    color: var(--doradoOpaco);
-    text-shadow: 0px 25px 30px hsla(0, 0%, 1%, 0.751);
-}
-
-.map-container {
-    width: 100%;      /* Ancho completo del contenedor */
-    height: 100px;     /* Altura del mapa, ajustable según tus necesidades */
-    max-width: 400px;  /* Máximo ancho */
-    margin-top: 18px;
-    margin-bottom: 50px;   
-    overflow: hidden;  
-    border: 1px solid var(--doradoOpaco);
-    border-radius: 20px; 
-    box-shadow: 0 6px 10px rgba(48, 48, 48, 0.3);
-}
-
-.map-container iframe {
-    width: 100%;        /* Hacer que el iframe ocupe el 100% del contenedor */
-    height: 100%;       /* Hacer que el iframe ocupe el 100% de la altura del contenedor */
-    border: 0;          /* Sin borde en el iframe */
-}
-
-.contenedorCronometro{
-    color: var(--doradoOpaco);
-}
-
 .cronometro {
     display: flex;
     justify-content: center;
     color: var(--doradoOpaco);
-    margin-top: 50PX;
+    margin-top: 20PX;
     margin-bottom: 40PX;
 }
 
@@ -271,6 +243,44 @@ box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
     align-self: center; /* Centra los dos puntos verticalmente */
 }
 
+.contenedorDeElemntos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px; 
+    width: 600px;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: var(--doradoOpaco);
+}
+
+.contenedorDeElemntos h2{
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;      /* Ancho completo del contenedor */
+    height: 130px;     /* Altura del mapa, ajustable según tus necesidades */
+    max-width: 400px;  /* Máximo ancho */
+    margin-top: 18px;
+    margin-bottom: 50px;   
+    overflow: hidden;  
+    border: 1px solid var(--doradoOpaco);
+    border-radius: 20px; 
+    box-shadow: 0 6px 10px rgba(48, 48, 48, 0.3);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+
+
 .redesSociales{
     display: flex;
     gap: 3rem;
@@ -291,3 +301,80 @@ box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
 .redesSociales i {
     display: inline-block; /* Necesario para que el transform funcione */
 }
+
+/*ajustamos la pantalla a una tablet*/
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        padding-top: 80px; /* Espaciado interno */
+    }
+
+    .fondo-tarjeta{
+        width: 680px;
+    }
+    .encabezado h1{
+        font-size: 7em;
+    }
+    
+    .encabezado p{
+        font-size: 3.5em;
+    }
+
+    .reproductor-musica {
+        width: 370px;
+        border-radius: 15px;
+        margin-top: 50px;
+    }
+    
+    .reproductor-musica h1 {
+        font-size: 2.2rem;
+    }
+    
+    .reproductor-musica p {
+        font-size: 0.8rem;
+    }
+
+    .timer h2 {
+        margin-bottom: 30px;
+    }
+    
+    .map-container {
+        height: 250px;     /* Altura del mapa, ajustable según tus necesidades */
+        max-width: 250px;  /* Máximo ancho */
+        border-radius: 50%; 
+    }
+    
+    .cronometro {
+        margin-top: 50PX;
+        margin-bottom: 40PX;
+    }
+    
+    .cronometro ul {
+        gap: 10px; /* Espacio entre los bloques */
+
+    }
+    
+    .cronometro li {
+        font-size: 1.8rem;
+    }
+    
+    .cronometro li span {
+        font-size: 3.2rem;
+    }
+    
+    .cronometro .separador {
+        font-size: 2rem;
+        padding: 0.3px;
+        align-self: center; /* Centra los dos puntos verticalmente */
+    }
+    
+    .redesSociales{
+        display: flex;
+        gap: 3rem;
+        font-size: 4rem;
+    }
+
+}
+
+/*ajustamos la pantalla a un celular*/
