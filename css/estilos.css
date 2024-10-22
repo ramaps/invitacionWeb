@@ -96,7 +96,7 @@ body > *{
     transform: translate(-50%, -50%) rotate(-5deg); /* Traslada el pseudo-elemento para centrarlo y rota solo la imagen */
     width: 500px; /* Ajusta el ancho del fondo */
     height: 380px; /* Ajusta la altura del fondo */
-    background: url('../img/jona\ y\ vani.jpg'); /* Ruta de tu imagen */
+    background: url('../img/rm321-mynt-16.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* O 'contain' o un tamaño específico, según tus necesidades */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen dentro del pseudo-elemento */
@@ -108,7 +108,7 @@ body > *{
 .encabezado h1{
     font-size: 9em;
     color: var(--doradoOpaco);
-    text-shadow: 0px 25px 30px hsla(0, 0%, 1%, 0.751);
+    text-shadow: 0px 25px 30px hsla(0, 0%, 98%, 0.751);
     position: relative;
     margin-bottom: 80px;
     margin-left: 350px;
@@ -120,7 +120,7 @@ body > *{
     margin-top: 20px;
     margin-bottom: 30px;
     color: var(--doradoOpaco);
-    text-shadow: 0px 25px 30px hsla(0, 0%, 1%, 0.751);
+    text-shadow: 0px 25px 30px hsla(0, 0%, 98%, 0.751);
     position: relative;
     z-index: 2;
 }
