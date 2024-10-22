@@ -225,7 +225,7 @@ body > *{
 .cronometro ul {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacio entre los bloques */
+    gap: 10px; /* Espacio entre los bloques */
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -245,7 +245,7 @@ body > *{
 }
 
 .cronometro .separador {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 0.3px;
     align-self: center; /* Centra los dos puntos verticalmente */
 }
