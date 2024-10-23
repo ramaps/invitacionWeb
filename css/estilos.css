@@ -328,7 +328,6 @@ body > *{
 }
 
 .galeria {
-    width: 100%;
     max-width: 500px;
     max-height: 300px;
     margin-top: 40px;
@@ -336,13 +335,47 @@ body > *{
 
 .contenedorImg{
     margin-bottom: 20px;
+
 }
 
 .galeria img {
     width: 100%;
     height: 300px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.793);
 }
 
+.contenedorContacto{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 80px 10px 50px;
+}
+
+.contenedorContacto p{
+    font-size: 1.3rem;
+    color:var(--azulVioletaFuerte);
+}
+
+.contenedorContacto .bi-whatsapp{
+    font-size: 5rem;
+    color: #0ab80a;
+}
+
+.contenedorContacto h2{
+    color:var(--azulVioletaFuerte);
+}
+
+.contacto{
+    align-items: center;
+    justify-content: center;
+}
+
+.botonContacto{
+    color: var(--blanco);
+    background-color:var(--azulVioletaFuerte);
+}
 /*fin del galeria imaganes*/
 
 
@@ -352,6 +385,7 @@ body > *{
     display: flex;
     gap: 3rem;
     font-size: 3rem;
+    margin: 80px 10px 50px;
 
 }
 
@@ -373,77 +407,5 @@ body > *{
 
 /*ajustamos la pantalla a una tablet*/
 
-@media (max-width: 768px) {
-
-    .encabezado {
-        padding-top: 80px; /* Espaciado interno */
-    }
-
-    .fondo-tarjeta{
-        width: 680px;
-    }
-    .encabezado h1{
-        font-size: 7em;
-    }
-    
-    .encabezado p{
-        font-size: 3.5em;
-    }
-
-    .reproductor-musica {
-        width: 370px;
-        border-radius: 15px;
-        margin-top: 50px;
-    }
-    
-    .reproductor-musica h1 {
-        font-size: 2.2rem;
-    }
-    
-    .reproductor-musica p {
-        font-size: 0.8rem;
-    }
-
-    .timer h2 {
-        margin-bottom: 30px;
-    }
-    
-    .map-container {
-        height: 250px;     /* Altura del mapa, ajustable según tus necesidades */
-        max-width: 250px;  /* Máximo ancho */
-        border-radius: 50%; 
-    }
-    
-    .cronometro {
-        margin-top: 50PX;
-        margin-bottom: 40PX;
-    }
-    
-    .cronometro ul {
-        gap: 10px; /* Espacio entre los bloques */
-
-    }
-    
-    .cronometro li {
-        font-size: 1.8rem;
-    }
-    
-    .cronometro li span {
-        font-size: 3.2rem;
-    }
-    
-    .cronometro .separador {
-        font-size: 2rem;
-        padding: 0.3px;
-        align-self: center; /* Centra los dos puntos verticalmente */
-    }
-    
-    .redesSociales{
-        display: flex;
-        gap: 3rem;
-        font-size: 4rem;
-    }
-
-}
 
 /*ajustamos la pantalla a un celular*/
