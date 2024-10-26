@@ -1,14 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root{
-    --dorado:#f0c505f9;
-    --doradoOpaco:#e3c034;
-    --blanco: #ffffff;
-    --azulVIoleta: #5c43ff7b;
-    --azulVioletaFuerte: #5c43ff;
-
+    --doradoOscuro: #ffbd3afc;
+    --amarilloClaro: #f9d7819e;
+    --doradoclaro: #ffc400;
 }
 
 * {
@@ -124,7 +120,7 @@ body > *{
     margin-top: 110px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--azulVioletaFuerte);
+    color: var(--doradoclaro);
 }
 
 .reproductor-musica {
@@ -132,27 +128,29 @@ body > *{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--blanco);
+    color: #ff9500;
     width: 400px;
     padding: 8px 20px;
     border-radius: 20px;
-    background-color: var(--azulVIoleta);
-    color: var(--blanco);
+    background-color: var(--amarilloClaro);
     margin-top: 30px;
     margin-bottom: 60px;
-    box-shadow: 0 6px 10px #03030374;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.793);
+
 }
 
 .reproductor-musica h1 {
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.6;
+    color: #ff9500;
 }
 
 .reproductor-musica p {
     font-size: 0.8rem;
     font-weight: 360;
     opacity: 0.6;
+    color: #ff9500;
 }
 
 #progreso {
@@ -160,7 +158,7 @@ body > *{
     -webkit-appearance: none;
     width: 100%;
     height: 6px;
-    background: var(--blanco);
+    background: var(--amarilloClaro);
     border-radius: 4px;
     margin: 30px 0 20px;
     cursor: pointer;
@@ -169,11 +167,11 @@ body > *{
 #progreso::-webkit-slider-thumb {
     appearance: none;
     -webkit-appearance: none;
-    background: var(--azulVioletaFuerte);
+    background: var(--doradoclaro);
     width: 16px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    outline: 4px solid var(--azulVIoleta);
+    outline: 4px solid var(--doradoOscuro);
     box-shadow: 0 6px 10px #03030374;
 }
 
@@ -186,16 +184,16 @@ body > *{
     width: 40px;
     aspect-ratio: 1/1;
     margin: 10px;
-    background: #130ac837;
+    background: #c8be0a37;
     color: var(--blanco);
     border-radius: 50%;
-    border: 1px solid var(--blanco);
+    border: 1px solid var(--amarilloClaro);
     outline: 0;
     font-size: 1.4rem;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.632);
     cursor: pointer;
     transition: all 0.1s linear;
-    color: var(--azulVioletaFuerte);
+    color: var(--doradoclaro);
 }
 
 .controles .control:hover {
@@ -222,14 +220,13 @@ body > *{
     width: 600px;
     font-size: 1.5rem;
     margin: 80px 10px 50px;
-    color: var(--azulVioletaFuerte);
-    text-shadow: 0 6px 10px rgba(0, 0, 0, 0.632);
+    color: var(--doradoclaro);
 }
 
 .cronometro {
     display: flex;
     justify-content: center;
-    color: var(--azulVioletaFuerte);
+    color: var(--doradoclaro);
     margin: 20px 10px 50px;
 }
 
@@ -278,8 +275,7 @@ body > *{
     width: 600px;
     font-size: 1.5rem;
     margin: 80px 10px 50px;
-    color: var(--azulVioletaFuerte);
-    text-shadow: 0 6px 10px rgba(0, 0, 0, 0.632);
+    color: var(--doradoclaro);
 }
 
 .contenedorDeMapa h2{
@@ -294,7 +290,7 @@ body > *{
     margin-top: 18px;
     margin-bottom: 50px; 
     overflow: hidden;
-    border: 1px solid var(--azulVioletaFuerte);
+    border: 1px solid var(--doradoclaro);
     border-radius: 20px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.793);
 }
@@ -316,13 +312,13 @@ body > *{
     width: 600px;
     margin: 90px;
     font-size: 1.5rem;
-    color: var(--azulVioletaFuerte);
+    color: var(--doradoclaro);
     
 }
 
 .contenedorDeGaleria h2{
     margin-bottom: 50px;
-    color: var(--azulVioletaFuerte);
+    color: var(--doradoclaro);
     text-align: center;
     font-size: 2rem;
 }
@@ -355,16 +351,16 @@ body > *{
 
 .contenedorContacto p{
     font-size: 1.3rem;
-    color:var(--azulVioletaFuerte);
+    color:var(--doradoclaro);
 }
 
 .contenedorContacto .bi-whatsapp{
     font-size: 5rem;
-    color: #0ab80a;
+    color: var(--doradoOscuro);
 }
 
 .contenedorContacto h2{
-    color:var(--azulVioletaFuerte);
+    color:var(--doradoclaro);
 }
 
 .contacto{
@@ -374,7 +370,7 @@ body > *{
 
 .botonContacto{
     color: var(--blanco);
-    background-color:var(--azulVioletaFuerte);
+    background-color:var(--doradoclaro);
 }
 
 .contacto {
@@ -383,7 +379,7 @@ body > *{
 }
 .botonContacto {
     display: inline-block;
-    background-color: var(--azulVioletaFuerte);
+    background-color: var(--doradoclaro);
     color: white;
     text-align: center;
     padding: 10px 20px;
@@ -415,7 +411,7 @@ body > *{
 }
 
 .redesSociales a {
-    color: var(--azulVioletaFuerte);
+    color: var(--doradoclaro);
     text-decoration: none; /* Esto elimina el subrayado de los enlaces */
     transition: transform 0.5s; /* Transición para el enlace */
 }
@@ -545,7 +541,7 @@ body > *{
     }
 
     .redesSociales a {
-        color: var(--azulVioletaFuerte);
+        color: var(--doradoclaro);
         transition: transform 0.5s;
     }
 
