@@ -376,6 +376,31 @@ body > *{
     color: var(--blanco);
     background-color:var(--azulVioletaFuerte);
 }
+
+.contacto {
+    display: inline-block;
+    margin: 10px;
+}
+.botonContacto {
+    display: inline-block;
+    background-color: var(--azulVioletaFuerte);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.botonContacto:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+.botonContacto h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
 /*fin del galeria imaganes*/
 
 
