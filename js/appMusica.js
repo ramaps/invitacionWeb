@@ -12,9 +12,9 @@ const botonAdelante = document.querySelector('.controles button.adelante');
 
 const canciones = [
     {
-        titulo:'Los Piratas',
-        nombre:'Los Auténticos Decadentes',
-        fuente:'music/Los Piratas - Los Auténticos Decadentes.mp3'
+        titulo:'Angels',
+        nombre:'Robbie Williams',
+        fuente:'music/Angels - Robbie Williams.mp3'
     },
     //agregar las canciones que sean necesarias
 ]; 
