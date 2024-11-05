@@ -438,34 +438,36 @@ body > *{
         background-size: contain;
     }
 
-    .wrapper, .fondo-tarjeta, .encabezado {
+    .wrapper, .fondo-tarjeta {
         width: 100%;
         padding: 10px;
     }
 
     .encabezado {
-        height: auto; /* Ajuste dinámico según el contenido */
-        margin: 10px 0;
+        text-align: center;
+        width: 90%;
+        height: 400px; /* Ajusta la altura del fondo */
+        padding: 20px;
         background-size: cover; /* Asegura que la imagen de fondo se muestre completa */
     }
 
     .encabezado h1 {
         font-size: 3em;
-        margin-right: 0;
+        margin-top: 10px;
         text-align: center;
     }
 
     .encabezado p {
-        font-size: 1.5em;
-        margin-top: 20px;
+        font-size: 2em;
+        margin-top: 200px;
         margin-bottom: 20px;
     }
 
     /* Ajustes para el Reproductor */
     .reproductor-musica {
-        width: 100%;
+        width: 90%;
         padding: 5px;
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
     .reproductor-musica h1 {
@@ -490,22 +492,23 @@ body > *{
 
     /* Ajustes para el Cronómetro */
     .contenedorDeCronometro, .contenedorDeMapa, .contenedorDeGaleria, .contenedorContacto {
-        width: 100%;
+        width: 90%;
         margin: 20px 0;
         font-size: 1rem;
+        margin-top: 100px;
         text-shadow: none;
     }
 
     .cronometro ul {
-        gap: 5px;
+        gap: 1px;
     }
 
     .cronometro li span {
-        font-size: 1.5rem; /* Tamaño más pequeño */
+        font-size: 1.6rem; /* Tamaño más pequeño */
     }
 
     .cronometro .separador {
-        font-size: 1.5rem; /* Tamaño más pequeño */
+        font-size: 1.6rem; /* Tamaño más pequeño */
     }
 
     /* Mapa */
@@ -533,8 +536,7 @@ body > *{
 
     /* Redes Sociales */
     .redesSociales {
-        display: flex;
-        flex-direction: row; /* Alineación horizontal */
+
         gap: 2rem;
         font-size: 2rem;
         margin: 20px 0; /* Ajuste de margen */
