@@ -432,6 +432,9 @@ body > *{
 
 @media (max-width: 360px) {
     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         min-height: 100vh;
         background-size: contain;
