@@ -44,7 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    background-color: antiquewhite; /* Ruta de tu imagen */
+    background-color: rgb(238, 140, 203); /* Ruta de tu imagen */
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -67,7 +67,7 @@ body > *{
 }
 
 .fondo-tarjeta {
-    background-image: url('../img/Invitacion\ de\ Cumpleaños\ de\ 15\ Floral\ Elegante.png'); /* Ruta de tu imagen */
+    background-image: url('../img/v731-ning-09f.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -362,10 +362,11 @@ body > *{
 
 .contenedorContacto h2{
     color:var(--doradoclaro);
+    margin-top: 80px;
 }
 
 .contacto{
-    margin: 10px;
+    margin-top: 80px;
     gap: 50px;
 }
 
@@ -429,15 +430,28 @@ body > *{
 /*ajustamos la pantalla a un celular*/
 
 @media (max-width: 360px) {
-    body {
-        flex-direction: column;
-        min-height: 100vh;
-        background-size: contain;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
-    .wrapper, .fondo-tarjeta {
+    html, body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100vw;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+
+    .wrapper, .fondo-tarjeta, .tarjeta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 10px;
+        padding: 5px;
     }
 
     .encabezado {
@@ -518,7 +532,6 @@ body > *{
         margin-top: 70px;
         width: 90%;
         margin: 0px 20px;
-
     }
 
     .map-container {
@@ -543,6 +556,14 @@ body > *{
         margin-top: 90px;
     }
 
+    .contenedorContacto h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contacto{
+        margin-top: 30px;
+    }
 
     .botonContacto {
         font-size: 16px;
