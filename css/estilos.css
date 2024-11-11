@@ -76,6 +76,7 @@ body > *{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    max-width: 60%;
     font-family: "Nunito", sans-serif;
     box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
 }
@@ -134,7 +135,7 @@ body > *{
     border-radius: 20px;
     background-color: var(--amarilloClaro);
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.793);
 
 }
@@ -214,7 +215,7 @@ body > *{
 
 .contenedorTexto{
     color: var(--doradoOscuro);
-    margin-top: 80px;
+    margin-top: 120px;
     margin-bottom: 60px;
     max-width: 60%;
     text-align: center;
@@ -438,12 +439,13 @@ body > *{
 }
 /*fin de Redes Sociales*/
 
-/*ajustamos la pantalla a una tablet*/
+
+/*media querry para tablets*/
 
 
 /*ajustamos la pantalla a un celular*/
 
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 480px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -464,14 +466,14 @@ body > *{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        max-width: 98%;
         padding: 5px;
     }
 
     .encabezado {
         text-align: center;
         width: 90%;
-        height: 400px; /* Ajusta la altura del fondo */
+        height: 450px; /* Ajusta la altura del fondo */
         padding: 20px;
         background-size: cover; /* Asegura que la imagen de fondo se muestre completa */
     }
@@ -520,8 +522,7 @@ body > *{
     .contenedorTexto{
         color: var(--doradoOscuro);
         max-width: 70%;
-        margin-top: 60px;
-        margin-bottom: 10px;
+        margin: 150px 0px 60px;
         text-align: center;
         font-size: 1rem;
     }
