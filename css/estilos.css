@@ -210,6 +210,20 @@ body > *{
 
 /*fin del reproductor*/
 
+/*inicio del texto*/
+
+.contenedorTexto{
+    color: var(--doradoOscuro);
+    margin-top: 80px;
+    margin-bottom: 60px;
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/*fin del texto*/
+
+
 /*inicio del cronometro*/
 
 .contenedorDeCronometro{
@@ -500,6 +514,20 @@ body > *{
         font-size: 1rem; /* Tamaño de fuente más pequeño */
         margin: 5px;
     }
+
+    /*inicio del texto*/
+
+    .contenedorTexto{
+        color: var(--doradoOscuro);
+        max-width: 70%;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /*fin del texto*/
+
 
     /* Ajustes para el Cronómetro */
     .contenedorDeCronometro{
