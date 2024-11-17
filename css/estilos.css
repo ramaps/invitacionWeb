@@ -76,7 +76,7 @@ body > *{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    max-width: 60%;
+    max-width: 80%;
     font-family: "Nunito", sans-serif;
     box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
 }
@@ -234,7 +234,7 @@ body > *{
     height: 300px; 
     width: 600px;
     font-size: 1.5rem;
-    margin: 80px 10px 50px;
+    margin: 80px 10px 80px;
     color: var(--doradoclaro);
 }
 
@@ -290,6 +290,7 @@ body > *{
     width: 380px;
     font-size: 1.5rem;
     color: var(--doradoclaro);
+    margin: 10px 0px 80px;
 }
 
 .contenedorDeMapa h2{
