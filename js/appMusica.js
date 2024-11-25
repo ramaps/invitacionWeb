@@ -12,9 +12,9 @@ const botonAdelante = document.querySelector('.controles button.adelante');
 
 const canciones = [
     {
-        titulo:'Angels',
-        nombre:'Robbie Williams',
-        fuente:'music/Angels - Robbie Williams.mp3'
+        titulo:'El Baile del Sapito',
+        nombre:'Las Canciones de La Granja',
+        fuente:'music/El Baile del Sapito - Las Canciones de La Granja.mp3'
     },
     //agregar las canciones que sean necesarias
 ]; 

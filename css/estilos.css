@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
 
 :root{
-    --doradoOscuro: #ffbd3afc;
-    --amarilloClaro: #f9d7819e;
-    --doradoclaro: #ffc400;
+    --doradoOscuro: #1aff00fc;
+    --amarilloClaro: #a0e0949e;
+    --doradoclaro: #1aff00fc;
 }
 
 * {
@@ -44,7 +44,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    background-color: rgb(238, 140, 203); /* Ruta de tu imagen */
+    background-color: rgb(0, 255, 89); /* Ruta de tu imagen */
+    background-image: url(../img/fondo\ web\ dino.png);
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -67,7 +68,7 @@ body > *{
 }
 
 .fondo-tarjeta {
-    background-image: url('../img/v731-ning-09f.jpg'); /* Ruta de tu imagen */
+    background-image: url('../img/dino\ fondo.png'); /* Ruta de tu imagen */
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -76,7 +77,7 @@ body > *{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    max-width: 80%;
+    max-width: 95%;
     font-family: "Nunito", sans-serif;
     box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
 }
@@ -89,7 +90,7 @@ body > *{
     height: 880px; /* Ajusta la altura del fondo */
     margin: 20px 10px 50px;
     padding: 20px; /* Espaciado interno */
-    background-image: url('../img/cumpleañeras.jpg');
+    background-image: url('../img/niño.jpeg');
     background-size: cover;
     z-index: 2; /* Asegura que el contenido está por encima del fondo */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.777);
@@ -129,7 +130,7 @@ body > *{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ff9500;
+    color: #33ff00;
     width: 400px;
     padding: 8px 20px;
     border-radius: 20px;
@@ -144,14 +145,14 @@ body > *{
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.6;
-    color: #ff9500;
+    color: #000000;
 }
 
 .reproductor-musica p {
     font-size: 0.8rem;
     font-weight: 360;
     opacity: 0.6;
-    color: #ff9500;
+    color: #000000;
 }
 
 #progreso {
