@@ -4,7 +4,7 @@ var minutos = document.getElementById('minutos');
 var segundos = document.getElementById('segundos');
 
 function cronometro() {
-    const cuentaRegresivaDatos = new Date('12/31/2024 22:00').getTime(); // Fecha de fin
+    const cuentaRegresivaDatos = new Date('12/31/2025 22:00').getTime(); // Fecha de fin
 
     // Conversiones a milisegundos
     const segundosMilisegundos = 1000;
