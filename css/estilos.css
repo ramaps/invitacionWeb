@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
 
 :root{
-    --doradoOscuro: #1aff00;
-    --amarilloClaro: #a0e0949e;
-    --doradoclaro: #1aff00fc;
+    --doradoOscuro: #baa019;
+    --amarilloClaro: #f0dd60ac;
+    --doradoclaro: #b09116;
 }
 
 * {
@@ -43,9 +43,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration-color: #000000;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    background-color: rgb(0, 255, 89); /* Ruta de tu imagen */
-    background-image: url(../img/fondo\ web\ dino.png);
+    background-color: rgb(254, 223, 112); /* Ruta de tu imagen */
+    background-image: url(../img/fondo\ negro\ con\ marco\ dorado.jpg);
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -68,7 +69,7 @@ body > *{
 }
 
 .fondo-tarjeta {
-    background-image: url('../img/dino\ fondo.png'); /* Ruta de tu imagen */
+    background-image: url('../img/v731-ning-09f.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -90,7 +91,7 @@ body > *{
     height: 880px; /* Ajusta la altura del fondo */
     margin: 20px 10px 50px;
     padding: 20px; /* Espaciado interno */
-    background-image: url('../img/niño.jpeg');
+    background-image: url('../img/cumpleañeras.jpg');
     background-size: cover;
     z-index: 2; /* Asegura que el contenido está por encima del fondo */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.777);
@@ -130,7 +131,7 @@ body > *{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #33ff00;
+    color: #dcc812;
     width: 400px;
     padding: 8px 20px;
     border-radius: 20px;
