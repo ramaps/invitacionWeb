@@ -226,7 +226,7 @@ body > *{
 /*inicio del texto*/
 
 .contenedorTexto{
-    color:  var(--doradoclaro) !important
+    color:  var(--doradoclaro);
     margin-top: 120px;
     margin-bottom: 60px;
     max-width: 60%;
