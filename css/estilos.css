@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
 
 :root{
-    --doradoOscuro: #baa019;
-    --amarilloClaro: #f0dd60ac;
-    --doradoclaro: #b09116;
+    --doradoOscuro: #8a7f4b;
+    --amarilloClaro: #dfdcc3ef;
+    --doradoclaro: #cd9c0a;
 }
 
 * {
@@ -45,8 +45,8 @@ body {
     align-items: center;
     text-decoration-color: #000000;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    background-color: rgb(254, 223, 112); /* Ruta de tu imagen */
-    background-image: url(../img/fondo\ negro\ con\ marco\ dorado.jpg);
+    background-color: rgb(212, 200, 158); /* Ruta de tu imagen */
+    background-image: url(../img/v731-ning-09f.jpg);
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -69,7 +69,7 @@ body > *{
 }
 
 .fondo-tarjeta {
-    background-image: url('../img/invitacion\ ADN\ 2025.jpg'); /* Ruta de tu imagen */
+    background-image: url('../img/v731-ning-09f.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -91,7 +91,7 @@ body > *{
     height: 880px; /* Ajusta la altura del fondo */
     margin: 20px 10px 50px;
     padding: 20px; /* Espaciado interno */
-    background-image: url('../img/invitacion\ ADN\ 2025.jpg');
+    background-image: url('../img/cumpleañeras.jpg');
     background-size: cover;
     z-index: 2; /* Asegura que el contenido está por encima del fondo */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.777);
@@ -131,7 +131,7 @@ body > *{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #dcc812;
+    color: #c6bc5b;
     width: 400px;
     padding: 8px 20px;
     border-radius: 20px;
@@ -216,7 +216,7 @@ body > *{
 /*inicio del texto*/
 
 .contenedorTexto{
-    color: var(--doradoOscuro);
+    color: var(--doradoclaro);
     margin-top: 120px;
     margin-bottom: 60px;
     max-width: 60%;
@@ -374,7 +374,7 @@ body > *{
 }
 
 .contenedorContacto p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color:var(--doradoclaro);
 }
 
