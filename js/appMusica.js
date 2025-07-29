@@ -12,9 +12,9 @@ const botonAdelante = document.querySelector('.controles button.adelante');
 
 const canciones = [
     {
-        titulo:'Angel',
-        nombre:'Robbie Williams',
-        fuente:'music/Angels - Robbie Williams.mp3'
+        titulo:'Yellow',
+        nombre:'Coldplay',
+        fuente:'music/Yellow - Coldplay.mp3'
     },
     //agregar las canciones que sean necesarias
 ]; 
