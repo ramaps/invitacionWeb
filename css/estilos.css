@@ -46,7 +46,7 @@ body {
     text-decoration-color: #000000;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
     background-color: rgb(212, 200, 158); /* Ruta de tu imagen */
-    background-image: url(../img/v731-ning-09f.jpg);
+    background-image: url(../img/romi/dorado\ brillantina.jpg);
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -69,7 +69,7 @@ body > *{
 }
 
 .fondo-tarjeta {
-    background-image: url('../img/v731-ning-09f.jpg'); /* Ruta de tu imagen */
+    background-image: url('../img/romi/rosa.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
@@ -80,7 +80,7 @@ body > *{
     min-height: 100vh;
     max-width: 95%;
     font-family: "Nunito", sans-serif;
-    box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);;
+    box-shadow:  0px 0px 30px hsla(0, 0%, 1%, 0.696);
 }
 
 /*inicio del encabezado*/
