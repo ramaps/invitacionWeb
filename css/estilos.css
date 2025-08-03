@@ -69,7 +69,7 @@ body > *{
 }
 
 .fondo-tarjeta {
-    background-image: url('../img/romi/rosa.jpg'); /* Ruta de tu imagen */
+    background-image: url('../img/romi/papel\ blanco\ 2.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* Para que cubra todo el fondo */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que se repita la imagen */
