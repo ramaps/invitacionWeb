@@ -292,6 +292,29 @@ body > *{
 /*fin del cronometro*/
 
 
+/*inicio de agendar*/
+
+.boton-calendario {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--doradoclaro);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-calendario:hover {
+    background-color: #45a049;
+}
+
+
+/*fin de agrndar*/
+
+
 /*inicio del mapa*/
 
 .contenedorDeMapa{
