@@ -295,22 +295,36 @@ body > *{
 /*inicio de agendar*/
 
 .boton-calendario {
+    /* Estilos base que ya tienes */
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: var(--doradoclaro);
+    background-color:var(--doradoclaro);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 17px;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    
+    /* Nuevos estilos */
+    font-size: 0.7em; /* Tamaño de fuente un poco más grande */
+    -webkit-tap-highlight-color: transparent; /* Elimina el color azul al tocar en móviles */
 }
 
-.boton-calendario:hover {
-    background-color: #45a049;
+.boton-calendario:active, 
+.boton-calendario:focus {
+    color: white !important; /* Mantiene el color blanco al presionar */
+    background-color: #3367D6 !important; /* Oscurece el fondo al presionar */
+    outline: none; /* Elimina el contorno en algunos navegadores */
 }
 
+/* Para Safari en iOS */
+@media (max-width: 768px) {
+    .boton-calendario {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
 
 /*fin de agrndar*/
 
