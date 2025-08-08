@@ -91,7 +91,7 @@ body > *{
     height: 880px; /* Ajusta la altura del fondo */
     margin: 20px 10px 50px;
     padding: 20px; /* Espaciado interno */
-    background-image: url('../img/romi/1.jpg');
+    background-image: url('../img/romi/principal.jpg');
     background-size: cover;
     z-index: 2; /* Asegura que el contenido está por encima del fondo */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.777);
@@ -334,7 +334,7 @@ body > *{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 1050px;
+    height: 1350px;
     width: 900px;
     margin: 10px;
     font-size: 1.5rem;
@@ -374,7 +374,7 @@ body > *{
     text-align: center;
     justify-content: center;
     gap: 1.5rem;
-    margin: 150px 10px 80px;
+    margin: 170px 10px 80px;
 }
 
 .contenedorContacto .bi-whatsapp{
@@ -386,11 +386,13 @@ body > *{
 .contenedorContacto p{
     font-size: 1.5rem;
     color:var(--doradoclaro);
+    margin-bottom: 30px;
 }
 
 .contenedorContacto h2{
     color:var(--doradoclaro);
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .contacto{
@@ -554,7 +556,7 @@ body > *{
 
     .contenedorDeGaleria{
         width: 90%;
-        height: 800px;
+        height: 1000px;
     }
 
     .cronometro ul {
