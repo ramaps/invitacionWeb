@@ -367,7 +367,8 @@ body > *{
 }
 
 /*comieza la seccion de contacto*/
-.contenedorContacto{
+/* Contenedor principal (sin cambios importantes) */
+.contenedorContacto {
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -377,54 +378,61 @@ body > *{
     margin: 170px 10px 80px;
 }
 
-.contenedorContacto .bi-whatsapp{
+/* Icono de WhatsApp (ajustado para el contenedor general) */
+.contenedorContacto .bi-whatsapp {
     font-size: 2.5rem;
     color: var(--doradoOscuro);
-
 }
 
-.contenedorContacto p{
+/* Estilos para párrafos y títulos (sin cambios) */
+.contenedorContacto p {
     font-size: 1.5rem;
-    color:var(--doradoclaro);
+    color: var(--doradoclaro);
     margin-bottom: 30px;
 }
 
-.contenedorContacto h2{
-    color:var(--doradoclaro);
+.contenedorContacto h2 {
+    color: var(--doradoclaro);
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.contacto{
-    margin-top: 80px;
-    gap: 50px;
-}
-
-.botonContacto{
-    color: var(--blanco);
-    background-color:var(--doradoclaro);
-}
-
+/* ---- BOTÓN DE CONTACTO (parte corregida) ---- */
 .botonContacto {
-    display: inline-block;
+    display: inline-flex;          /* Cambiado a flex para alinear icono + texto */
+    align-items: center;          /* Centra verticalmente */
+    justify-content: center;      /* Centra horizontalmente */
+    gap: 10px;                    /* Espacio entre icono y texto */
     background-color: var(--doradoclaro);
     color: white;
-    text-align: center;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+/* Efecto hover (sin cambios) */
 .botonContacto:hover {
     background-color: #45a049;
     transform: scale(1.1);
 }
-.botonContacto h1 {
-    margin: 0;
-    font-size: 18px;
+
+/* Ajuste para el icono DENTRO del botón */
+.botonContacto .bi-whatsapp {
+    font-size: 1.3em;  /* Mismo tamaño que el texto (18px) */
+    color: white;    /* Color blanco para igualar al texto */
+    margin: 0;       /* Elimina márgenes predeterminados */
 }
 
+/* Eliminamos el <h1> (no es necesario) o lo ajustamos */
+.botonContacto h1 {
+    margin: 0;
+    font-size: 1em;  /* Hereda el tamaño del botón (18px) */
+    display: flex;    /* Si se mantiene, usamos flex para alinear */
+    align-items: center;
+    gap: 10px;
+}
 /*fin del galeria imaganes*/
 
 
@@ -606,8 +614,26 @@ body > *{
         margin-bottom: 40px;
     }
 
+    .botonContacto h1 {
+        display: flex;           /* Activa Flexbox */
+        align-items: center;     /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        gap: 10px;              /* Separación entre icono y texto */
+        margin: 0;              /* Elimina márgenes predeterminados del h1 */
+        padding: 0;             /* Elimina padding predeterminado */
+    }
+
+    .botonContacto h1 i {
+        font-size: 1em;         /* Mismo tamaño que el texto (o ajusta a tu necesidad) */
+    }
+
     .contacto{
         margin-top: 30px;
+    }
+
+    .contacto .bi-whatsapp{
+        font-size: 1.2em;
+        color: white; 
     }
 
     .botonContacto {
