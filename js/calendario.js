@@ -4,9 +4,9 @@ document.getElementById('agendarGoogle').addEventListener('click', function(e) {
     
     // Configuración del evento (¡Edita estos valores!)
     const configEvento = {
-        fechaInicio: '2025-09-13T21:00:00',  // Fecha/hora predeterminada
+        fechaInicio: '2025-10-17T21:00:00',  // Fecha/hora predeterminada
         duracionHoras: 1,                    // Duración en horas
-        titulo: 'Cumple de 15 años de Aymará' // Título (sin codificar)
+        titulo: 'Cumple de Ramiro' // Título (sin codificar)
     };
 
     // Formatear fechas para Google Calendar
